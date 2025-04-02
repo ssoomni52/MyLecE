@@ -23,7 +23,9 @@ fun TodoItem(item: Item, modifier: Modifier = Modifier) {
             style = if (item.status == TodoStatus.COMPLETED) TextStyle(textDecoration = TextDecoration.LineThrough)
                     else TextStyle(textDecoration = TextDecoration.None)
         )
+
         Spacer(modifier = Modifier.height(4.dp))
+
         Text(text = item.time, fontSize = 10.sp)
     }
 

@@ -11,12 +11,10 @@ fun TodoCheckbox(
     modifier: Modifier = Modifier,
     onCheckedChange: (Boolean) -> Unit
 ) {
-
-//    Checkbox(checked = checked, onCheckedChange = { onCheckedChange(it) })
     Checkbox(checked = checked, onCheckedChange = { checked -> onCheckedChange(checked) })
-
-
+//    Checkbox(checked = checked, onCheckedChange = { onCheckedChange(it) })
 }
+
 
 @Preview
 @Composable
